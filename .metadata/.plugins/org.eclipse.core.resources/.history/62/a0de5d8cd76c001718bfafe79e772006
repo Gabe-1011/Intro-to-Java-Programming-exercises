@@ -1,0 +1,14 @@
+package exercise;
+
+public class TestOctagon {
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Octagon octagon = new Octagon(5);
+		System.out.println(octagon.toString());
+		Octagon octagon2 = (Octagon)octagon.clone();
+		System.out.println("Is octagon 1 the same as octagon 2? " +
+				octagon.compareTo(octagon2));
+
+	}
+
+}

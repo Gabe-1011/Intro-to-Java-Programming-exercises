@@ -1,0 +1,40 @@
+package listing;
+
+import javafx.scene.Node;
+
+public class MyLinkedList<E> extends MyAbstractList<E> {
+	private Node<E> head, tail;
+	
+	/** Create a default list */
+	public MyLinkedList() {
+	}
+	
+	/** Create a list from an array of objects */
+	public MyLinkedList(E[] objects) {
+		super(objects);
+	}
+	
+	/** Return the head element in the list */
+	public E getFirst() {
+		if (size == 0) {
+			return null;
+		}
+		else{
+			return head.element;
+		}
+	}
+	
+	/** Return the last element in the list */
+	public E getLast() {
+		if (size == 0) {
+			return null;
+		}
+		else{
+			return tail.element;
+		}
+	}
+	
+	
+	
+
+}
